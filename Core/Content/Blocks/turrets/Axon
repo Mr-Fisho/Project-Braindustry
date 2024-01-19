@@ -1,0 +1,148 @@
+{
+  "type": "ItemTurret",
+  "researchCostMultiplier": 0.9,
+  "squareSprite": false,
+  "outlineColor": "36363CFF",
+  "size": 4,
+  "health": 1600,
+  "reload": 70,
+  "range": 300,
+  "velocityRnd": 0.25,
+  "shoot": {
+    "type": "shootSpread",
+    "shots": 10,
+    "spread": 7
+  },
+  "drawer": {
+    "type": "drawTurret",
+    "basePrefix": "genesux-",
+    "parts": [
+      {
+        "type": "RegionPart",
+        "suffix": "-side",
+        "moveY": -2,
+        "moveRot": -19,
+        "mirror": true,
+        "progress": "recoil"
+      }
+    ]
+  },
+  "shootCone": 20,
+  "recoil": 3,
+  "rotateSpeed": 2,
+  "shootSound": "shotgun",
+  "ammoTypes": {
+    "Exo-metal": {
+      "type": "basicBulletType",
+      "status": "Shocked",
+      "lifetime": 10,
+      "speed": 9,
+      "damage": 120,
+      "height": 20,
+      "width": 25,
+      "trailColor": "#FFFF00",
+      "trailLength": 6,
+      "trailWidth": 5,
+      "despawnHit": true,
+      "hitEffect": {
+        "type": "multiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "line": true,
+            "particles": 10,
+            "lifetime": 45,
+            "interp": "circleOut",
+            "length": 75,
+            "cone": -40,
+            "strokeTo": 0,
+            "lightColor": "#FFFF00",
+            "lenFrom": 8,
+            "lenTo": 0,
+            "strokeFrom": 2,
+            "colorFrom": "#FFFF00",
+            "colorTo": ""
+          },
+          {
+            "type": "ExplosionEffect",
+            "waveColor": "#FFFF00",
+            "sparkColor": "#FFFF00",
+            "smokes": 4,
+            "smokeSize": 4.7,
+            "smokeSizeBase": 1.6,
+            "smokeRad": 36,
+            "waveLife": 10,
+            "waveStroke": 4.1,
+            "waveRad": 25,
+            "waveRadBase": 2.0,
+            "sparkLen": 7,
+            "sparks": 12
+          }
+        ]
+      },
+      "frontColor": "#FFFF00",
+      "backColor": "#FFFF00"
+    },
+    "graphenite": {
+      "type": "basicBulletType",
+      "status": "sapped",
+      "lifetime": 10,
+      "speed": 9,
+      "damage": 60,
+      "trailColor": "#6E576B",
+      "trailLength": 6,
+      "trailWidth": 5,
+      "height": 20,
+      "width": 25,
+      "hitEffect": {
+        "type": "multiEffect",
+        "effects": [
+          {
+            "type": "ParticleEffect",
+            "line": true,
+            "particles": 10,
+            "lifetime": 45,
+            "interp": "circleOut",
+            "length": 75,
+            "cone": -40,
+            "strokeTo": 0,
+            "lightColor": "ADFFE4FF",
+            "lenFrom": 8,
+            "lenTo": 0,
+            "strokeFrom": 2,
+            "colorFrom": "#6E576B",
+            "colorTo": "	#800080"
+          },
+          {
+            "type": "ExplosionEffect",
+            "waveColor": "	#800080",
+            "sparkColor": "ADFFE4FF",
+            "smokes": 4,
+            "smokeSize": 4.7,
+            "smokeSizeBase": 1.6,
+            "smokeRad": 36,
+            "waveLife": 10,
+            "waveStroke": 4.1,
+            "waveRad": 25,
+            "waveRadBase": 2.0,
+            "sparkLen": 7,
+            "sparks": 12
+          }
+        ]
+      },
+      "frontColor": "ffffffff",
+      "backColor": "ADFFE4FF"
+    }
+  },
+  "requirements": [
+    "silicon/470",
+    "odinum/500",
+    "chromium/300",
+    "metaglass/420",
+    "exo-metal/340"
+  ],
+  "envRequired": 0,
+  "enDisabled": 4,
+  "category": "turret",
+  "research": "Synaps"
+}
