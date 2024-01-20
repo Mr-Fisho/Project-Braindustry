@@ -1,0 +1,12 @@
+{
+  "hardness": 18,
+  "cost": 7,
+  "charge": 0,
+  "color": "FFF861FF",
+  "research": {
+    "parent": "graphenite",
+    "requirements": [
+      "graphenite/200"
+    ]
+  }
+}
