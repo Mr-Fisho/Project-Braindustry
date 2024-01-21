@@ -19,7 +19,7 @@
   "rotateSpeed": 6,
   "shootSound": "railgun",
   "ammoTypes": {
-    "graphenite": {
+    "exoticAlloy": {
       "type": "pointBulletType",
       "damage": 2160,
       "shootEffect": "instShoot",
@@ -36,7 +36,23 @@
       "trailEffect": "instTrail",
       "despawnEffect": "instBomb",
       "hitEffect": "instHit"
-    }
+    },
+      "plastic"
+            "damage": 200,
+      "status": "slow",
+      "statusDuration": "120",
+      "width": 25,
+      "pierce": "true",
+      "type": "ShrapnelBulletType",
+      "lifetime": 18,
+      "length": 160,
+      "serrations": 8,
+      "fromColor": "F9A3C7FF",
+      "toColor": "CB8EBFFF",
+      "ammoMultiplier": 5,
+      "shootEffect": "thoriumShoot",
+      "hitEffect": "thoriumShoot"
+
   },
   "consumes": {
     "power": 20
