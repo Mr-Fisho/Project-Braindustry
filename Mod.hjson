@@ -2,6 +2,6 @@ name: "project-braindustry"
 displayName: "Project Braindustry"
 author: "Quant Team"
 description: "Big mod with new resources, planets, mechanics, turrets and units, have fun"
-main: "braindustry.BraindustryMod"
-version: 1.0.0 public beta
-minGameVersion: 145
+main: "project-braindustry"
+version: 1.0.2 public beta
+minGameVersion: 146
