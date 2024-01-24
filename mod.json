@@ -1,7 +1,7 @@
 name: "project-braindustry"
 displayName: "Project Braindustry"
-author: "Quant Team"
-description: "Big mod with new resources, planets, mechanics, turrets and units, have fun"
+author: "Mr Fisho"
+description: "A big mod that adds a new star system and a huge thanks to Quant team for designing the orignal version"
 main: "project-braindustry"
 version: 1.0.2 public beta
 minGameVersion: 146
